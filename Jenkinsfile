@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t nginx .'
+                sh 'sudo docker build -t nginx .'
             }
         }
         stage('Deploy to Docker Swarm') {

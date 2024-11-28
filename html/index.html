@@ -1,37 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NGINX Welcome Page</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #4caf50, #81c784);
-      color: #fff;
-      text-align: center;
+      background: #1e1e2f;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    h1 {
-      margin: 20px 0;
+    header {
+      background: #33334d;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      border-bottom: 2px solid #4caf50;
+    }
+    header h1 {
       font-size: 2.5rem;
+      margin: 0;
+      color: #4caf50;
     }
     .container {
-      padding: 50px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .container h2 {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #81c784;
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .images img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
     footer {
       margin-top: 50px;
-      font-size: 1rem;
+      background: #33334d;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9rem;
       color: #e0f2f1;
+    }
+    a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Welcome to Oliver Woodward's NGINX Project</h1>
+  </header>
+  
   <div class="container">
-    <h1>Hello from NGINX Docker Container!</h1>
-    <h1>This is the product of Oliver Woodward</h1>
+    <h2>Powered by Modern Web Development</h2>
+    <div class="images">
+      <img src="https://via.placeholder.com/300?text=Code+Snippet" alt="Code snippet">
+      <img src="https://via.placeholder.com/300?text=NGINX+Logo" alt="NGINX Logo">
+      <img src="https://via.placeholder.com/300?text=Docker+Setup" alt="Docker Setup">
+    </div>
+    <p>Explore the world of <a href="https://www.nginx.com" target="_blank">NGINX</a> and learn how Docker can revolutionize your development process!</p>
   </div>
+
   <footer>
-    &copy; 2024 Oliver Woodward
+    &copy; 2024 Oliver Woodward. All rights reserved.
   </footer>
 </body>
 </html>

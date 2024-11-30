@@ -1,3 +1,9 @@
+Here’s how to add an image of someone coding to your HTML:
+	1.	Place the image within the .container div.
+	2.	Include an <img> tag and a placeholder URL for the image.
+
+Updated HTML:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +44,13 @@
       margin: 20px 0;
       color: #81c784;
     }
-   
+    .container img {
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #4caf50;
+      border-radius: 8px;
+    }
     footer {
       margin-top: 50px;
       background: #33334d;
@@ -65,6 +77,7 @@
   <div class="container">
     <h2>Powered by Modern Web Development</h2>
     <p>Explore the world of <a href="https://www.nginx.com" target="_blank">NGINX</a> and learn how Docker can revolutionize your development process!</p>
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpermutable.ai%2Fcoding-become-obsolete%2F&psig=AOvVaw1hjk0FnLgqLb2VPY0OL_Zy&ust=1733070085447000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMj9wqm7hIoDFQAAAAAdAAAAABAE" alt="Person coding on a computer">
   </div>
 
   <footer>
@@ -72,3 +85,5 @@
   </footer>
 </body>
 </html>
+
+Replace the src URL in the <img> tag with your desired image URL.

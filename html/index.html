@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +9,12 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background: #1e1e2f;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a44);
       color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow-x: hidden;
     }
     header {
       background: #33334d;
@@ -23,11 +22,17 @@
       width: 100%;
       text-align: center;
       border-bottom: 2px solid #4caf50;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
     header h1 {
       font-size: 2.5rem;
       margin: 0;
       color: #4caf50;
+      text-shadow: 2px 2px 8px rgba(76, 175, 80, 0.5);
+      transition: transform 0.3s;
+    }
+    header h1:hover {
+      transform: scale(1.1);
     }
     .container {
       max-width: 1200px;
@@ -39,6 +44,8 @@
       font-size: 2rem;
       margin: 20px 0;
       color: #81c784;
+      text-shadow: 1px 1px 6px rgba(129, 199, 132, 0.7);
+      animation: fadeIn 2s ease-in-out;
     }
     .container img {
       margin-top: 20px;
@@ -46,6 +53,12 @@
       height: auto;
       border: 2px solid #4caf50;
       border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(76, 175, 80, 0.6);
     }
     footer {
       margin-top: 50px;
@@ -55,13 +68,26 @@
       text-align: center;
       font-size: 0.9rem;
       color: #e0f2f1;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
     }
     a {
       color: #4caf50;
       text-decoration: none;
+      transition: color 0.3s;
     }
     a:hover {
+      color: #81c784;
       text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -81,5 +107,3 @@
   </footer>
 </body>
 </html>
-
-
